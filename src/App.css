@@ -6,7 +6,12 @@
 .leaf{
   width: 27px;
 }
-
+.close{
+  display: none;
+}
+.mobile-menu-icon{
+  display: none;
+}
 .cart{
   width: 33px;
 }
@@ -43,6 +48,9 @@ width: 30%;
 list-style: none;
 }
 
+.menu{
+  display: none;
+}
 .NavLinks a{
   text-decoration:none;
   color: black;
@@ -433,7 +441,7 @@ margin-top: auto;
   background-color: black;
   position: absolute;
   bottom: 0em;
-  left: 20.5em;
+  left: 26.5em;
 }
 .s-box-containor{
   margin-top: 3em;
@@ -585,4 +593,245 @@ form .t-field{
   background-color:#61a92d9c;
   margin-left: 9em;
   margin-bottom: 3em;
+}
+
+
+@media only screen and (max-width: 760px ){
+
+.Hero-bg img {
+  width: 270px;
+
+}
+.Hero-bg .g{
+  font-size: 25px;
+}
+.main-text{
+  margin-top:0.5em;
+  width: 80%;
+  
+  
+  
+}
+.main-text span{
+  font-size: 25px;
+}
+.main-text h3{
+  font-size: 15.5px;
+  padding-left:20px ;
+}
+.main-text h3 span{
+  font-size: 15.5px;
+
+}
+.main-text p{
+  font-size: 12px;
+  padding-left:20px ;
+}
+.Hero-btn {
+  padding: 5px 10px;
+  top:0.7em;
+  
+   }
+   .Card-p h1{
+     font-size: 20px;
+   }
+
+   .Card-p h1::before{
+  
+    width: 50px;
+  
+    left: 400px;
+   
+  
+  }
+  .Card-p h1::after{
+  
+    width: 50px;
+  
+    right: 400px;
+   
+  
+  }
+  .card-c{
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 120px 120px 80px;
+ 
+}
+.card-b button{
+ 
+  width: 100px;
+  height: 20px;
+  font-size: 10px;
+margin-top: 3em;
+}
+.card-t p{
+  font-size: 12px;
+  
+}
+.card-t{
+  
+  margin: 0.3px;
+}
+.star{
+  font-size: medium;
+}
+
+.scound-bg{
+  display: block;
+   
+  
+  }
+  .scound-bg img  {
+    width: 520px;
+    
+    }
+    .Our-plant{
+  
+      color:black;
+      text-align: left;
+      width: 400px;
+      line-height: 1.8;
+     margin-left: 3em;
+    
+    }
+      .scound-bg h1  {
+        font-size: 25px;
+        
+        }
+        .icon-text img {
+          width: 50px;
+        }
+        .icon-text h2 {
+          font-size: 15px;
+        } 
+        .icon-text button {
+          margin-left: 2em;
+        }   
+        .NavLinks{
+          display: none;
+        }
+        .NavLinks-mobile{
+          display: block;
+          position: fixed;
+          right: 0;
+          top: 0;
+          height: 100vh;
+          background: white;
+          width: 50%;
+          z-index: 2;
+          list-style: none;
+          transition: transform .5s ease-in-out;
+         padding-top: 1em;
+         
+        }
+        .NavLinks-mobile a{
+          text-decoration:none;
+          color: black;
+          
+        }
+        .c-link {
+          margin-top: 3em;
+        }
+        .NavBar{
+          justify-content: space-between;
+          padding-left: 1.5em;
+          padding-right: 1.5em;
+          
+        }
+        .log-in-icon{
+          display: none;
+        }
+        .About{
+          display: block;
+          
+        }
+        .plant3 {
+         
+          width: 537px;
+          height: 400px;
+          margin-left: 3px;
+          
+        }
+        .About-us p{
+          font-size: 12px;
+        }
+        .About-us{
+         margin-top: 2px;
+         margin-left: 10px;
+          width: 500px;
+         
+         
+        }
+        .About-us h1::before{
+          
+
+          right: 5em;
+         
+        }
+      .s-box img{
+        width: 70px;
+
+
+      }
+      .s-box h2{
+
+        font-size: 15px;
+
+
+      }
+      .s-box p{
+
+        font-size: 10px;
+        
+
+      }
+      .s-box{
+        
+        
+        width: 370px;
+        height: 290px;
+        
+       margin: 10px;
+      
+        border: 1px solid black;
+      }
+      .s-btn{
+        
+     
+      padding: 10px 10px;
+   
+      }
+      .s-box-containor{
+        margin-top: 7em;
+      
+       
+      }
+      .services h1::before{
+      
+        left: 5.5em;
+      }
+
+      .c-link:hover::after{
+        width: 30%;
+       
+      }
+      .close{
+        width: 25px;
+        float: right;
+        margin: 2em;
+       
+        display: block;
+      }
+
+      .menu{
+        display:block;
+        width: 23px;
+        margin-top: 0.9em;
+      }
+      .mobile-menu-icon{
+        display: block;
+        width: 50px;
+        height: 50px;
+      }
 }

@@ -3,6 +3,7 @@ import firebase from "firebase"
 const firebaseConfig = {
   apiKey: "AIzaSyBDL6F9ArfbZw8XJU0di8aALp8qwOtY6Po",
   authDomain: "green-house-a1c84.firebaseapp.com",
+  databaseURL: "https://green-house-a1c84-default-rtdb.firebaseio.com",
   projectId: "green-house-a1c84",
   storageBucket: "green-house-a1c84.appspot.com",
   messagingSenderId: "344495583719",

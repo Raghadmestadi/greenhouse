@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Nav() {
+  const [isMobile, setisMobile] = useState(false)
   return (
     <div className="NavBar">
       <div className="logo">
@@ -10,7 +12,19 @@ function Nav() {
         <h4>House</h4>
       </div>
 
-      <ul className="NavLinks">
+      <div className="mobile-menu-icon" onClick={() => setisMobile(!isMobile)}>
+        {isMobile ? (
+          <li>
+            <img src="/images/close.svg" alt="close" className="close"></img>
+          </li>
+        ) : (
+          <img src="/images/menu.svg" alt="menu" className="menu" />
+        )}
+      </div>
+      <ul className={isMobile ? "NavLinks-mobile" : "NavLinks"} onClick={() => setisMobile(false)}>
+        <li>
+          <img src="/images/close.svg" alt="close" className="close"></img>
+        </li>
         <Link to="/">
           {" "}
           <li className="c-link">Home</li>

@@ -22,19 +22,19 @@ import Contact from "./components/Contact"
 library.add(fas, fab, faCheckSquare, faCoffee)
 class App extends Component {
   state = { Products: null }
-  async componentDidMount() {
-    const ProductsData = await getProductsData()
-    this.setState({ Products: ProductsData })
-    this.authListener()
-  }
-  authListener = () => {
-    firebase.auth().onAuthStateChanged(user => {
-      console.log("user:", user)
-    })
-  }
-  handleSignUp = (email, password) => {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-  }
+  // async componentDidMount() {
+  //   const ProductsData = await getProductsData()
+  //   this.setState({ Products: ProductsData })
+  //   this.authListener()
+  // }
+  // authListener = () => {
+  //   firebase.auth().onAuthStateChanged(user => {
+  //     console.log("user:", user)
+  //   })
+  // }
+  // handleSignUp = (email, password) => {
+  //   firebase.auth().createUserWithEmailAndPassword(email, password)
+  // }
   render() {
     return (
       <div className="App">
